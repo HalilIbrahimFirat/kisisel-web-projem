@@ -1,0 +1,388 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A012DB88-1580-4C2C-948F-25A0FF55B772}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kisiselwebprojev2</RootNamespace>
+    <AssemblyName>kisiselwebprojev2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44359</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anasayfa.aspx" />
+    <Content Include="css\all.min.css" />
+    <Content Include="css\bar.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\firat.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.min.css" />
+    <Content Include="css\tooplate-ben-resume-style.css" />
+    <Content Include="form.aspx" />
+    <Content Include="images\ben.jpg" />
+    <Content Include="images\testimonials\testimonial-image01.jpg" />
+    <Content Include="images\testimonials\testimonial-image02.jpg" />
+    <Content Include="images\testimonials\testimonial-image03.jpg" />
+    <Content Include="images\testimonials\testimonial-image04.jpg" />
+    <Content Include="images\true-agency.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\smoothscroll.js" />
+    <Content Include="login.aspx" />
+    <Content Include="panel.aspx" />
+    <Content Include="paneldosya\css\style.css" />
+    <Content Include="paneldosya\images\dashboard\circle.svg" />
+    <Content Include="paneldosya\images\dashboard\img_1.jpg" />
+    <Content Include="paneldosya\images\dashboard\img_2.jpg" />
+    <Content Include="paneldosya\images\dashboard\img_3.jpg" />
+    <Content Include="paneldosya\images\dashboard\img_4.jpg" />
+    <Content Include="paneldosya\images\faces-clipart\pic-1.png" />
+    <Content Include="paneldosya\images\faces-clipart\pic-2.png" />
+    <Content Include="paneldosya\images\faces-clipart\pic-3.png" />
+    <Content Include="paneldosya\images\faces-clipart\pic-4.png" />
+    <Content Include="paneldosya\images\faces\face1.jpg" />
+    <Content Include="paneldosya\images\faces\face10.jpg" />
+    <Content Include="paneldosya\images\faces\face11.jpg" />
+    <Content Include="paneldosya\images\faces\face12.jpg" />
+    <Content Include="paneldosya\images\faces\face13.jpg" />
+    <Content Include="paneldosya\images\faces\face14.jpg" />
+    <Content Include="paneldosya\images\faces\face15.jpg" />
+    <Content Include="paneldosya\images\faces\face16.jpg" />
+    <Content Include="paneldosya\images\faces\face17.jpg" />
+    <Content Include="paneldosya\images\faces\face18.jpg" />
+    <Content Include="paneldosya\images\faces\face19.jpg" />
+    <Content Include="paneldosya\images\faces\face2.jpg" />
+    <Content Include="paneldosya\images\faces\face20.jpg" />
+    <Content Include="paneldosya\images\faces\face21.jpg" />
+    <Content Include="paneldosya\images\faces\face22.jpg" />
+    <Content Include="paneldosya\images\faces\face23.jpg" />
+    <Content Include="paneldosya\images\faces\face24.jpg" />
+    <Content Include="paneldosya\images\faces\face25.jpg" />
+    <Content Include="paneldosya\images\faces\face26.jpg" />
+    <Content Include="paneldosya\images\faces\face27.jpg" />
+    <Content Include="paneldosya\images\faces\face3.jpg" />
+    <Content Include="paneldosya\images\faces\face4.jpg" />
+    <Content Include="paneldosya\images\faces\face5.jpg" />
+    <Content Include="paneldosya\images\faces\face6.jpg" />
+    <Content Include="paneldosya\images\faces\face7.jpg" />
+    <Content Include="paneldosya\images\faces\face8.jpg" />
+    <Content Include="paneldosya\images\faces\face9.jpg" />
+    <Content Include="paneldosya\images\favicon.png" />
+    <Content Include="paneldosya\images\logo-mini.svg" />
+    <Content Include="paneldosya\images\logo.svg" />
+    <Content Include="paneldosya\js\chart.js" />
+    <Content Include="paneldosya\js\dashboard.js" />
+    <Content Include="paneldosya\js\file-upload.js" />
+    <Content Include="paneldosya\js\misc.js" />
+    <Content Include="paneldosya\js\off-canvas.js" />
+    <Content Include="paneldosya\pages\charts\chartjs.html" />
+    <Content Include="paneldosya\pages\forms\basic_elements.html" />
+    <Content Include="paneldosya\pages\icons\mdi.html" />
+    <Content Include="paneldosya\pages\samples\blank-page.html" />
+    <Content Include="paneldosya\pages\samples\error-404.html" />
+    <Content Include="paneldosya\pages\samples\error-500.html" />
+    <Content Include="paneldosya\pages\samples\login.html" />
+    <Content Include="paneldosya\pages\samples\register.html" />
+    <Content Include="paneldosya\pages\tables\basic-table.html" />
+    <Content Include="paneldosya\pages\ui-features\buttons.html" />
+    <Content Include="paneldosya\pages\ui-features\typography.html" />
+    <Content Include="paneldosya\partials\_footer.html" />
+    <Content Include="paneldosya\partials\_navbar.html" />
+    <Content Include="paneldosya\partials\_sidebar.html" />
+    <Content Include="paneldosya\vendors\css\vendor.bundle.base.css" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\css\materialdesignicons.css" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\css\materialdesignicons.min.css" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\preview.html" />
+    <Content Include="paneldosya\vendors\js\vendor.bundle.addons.js" />
+    <Content Include="paneldosya\vendors\js\vendor.bundle.base.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
+    <Content Include="style.css" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfa.aspx.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anasayfa.aspx.designer.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfa.Master.cs">
+      <DependentUpon>anasayfa.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Master.designer.cs">
+      <DependentUpon>anasayfa.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\SqlConnectionClass.cs" />
+    <Compile Include="form.aspx.cs">
+      <DependentUpon>form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form.aspx.designer.cs">
+      <DependentUpon>form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="form.Master.cs">
+      <DependentUpon>form.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form.Master.designer.cs">
+      <DependentUpon>form.Master</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.Master.cs">
+      <DependentUpon>login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.Master.designer.cs">
+      <DependentUpon>login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="panel.aspx.cs">
+      <DependentUpon>panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panel.aspx.designer.cs">
+      <DependentUpon>panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panel.Master.cs">
+      <DependentUpon>panel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panel.Master.designer.cs">
+      <DependentUpon>panel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anasayfa.Master" />
+    <Content Include="form.Master" />
+    <Content Include="login.Master" />
+    <Content Include=".vs\2120_ben_resume\config\applicationhost.config" />
+    <Content Include=".vs\2120_ben_resume\v16\.suo" />
+    <Content Include=".vs\slnx.sqlite" />
+    <Content Include=".vs\VSWorkspaceState.json" />
+    <Content Include="localfonts\Plain-Bold.woff" />
+    <Content Include="localfonts\Plain-Bold.woff2" />
+    <Content Include="localfonts\Plain-Light.woff" />
+    <Content Include="localfonts\Plain-Light.woff2" />
+    <Content Include="localfonts\Plain-Regular.woff" />
+    <Content Include="localfonts\Plain-Regular.woff2" />
+    <None Include="packages.config" />
+    <Content Include="panel.Master" />
+    <Content Include="paneldosya\.vs\PurpleAdmin-Free-Admin-Template-master\config\applicationhost.config" />
+    <Content Include="paneldosya\.vs\PurpleAdmin-Free-Admin-Template-master\v16\.suo" />
+    <Content Include="paneldosya\.vs\slnx.sqlite" />
+    <Content Include="paneldosya\.vs\VSWorkspaceState.json" />
+    <Content Include="paneldosya\css\maps\style.css.map" />
+    <Content Include="paneldosya\fonts\.DS_Store" />
+    <Content Include="paneldosya\fonts\Ubuntu\.DS_Store" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Bold.eot" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Bold.ttf" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Bold.woff" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Bold.woff2" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Light.eot" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Light.ttf" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Light.woff" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Light.woff2" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Medium.eot" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Medium.ttf" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Medium.woff" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Medium.woff2" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Regular.eot" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Regular.ttf" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Regular.woff" />
+    <Content Include="paneldosya\fonts\Ubuntu\Ubuntu-Regular.woff2" />
+    <Content Include="paneldosya\images\.DS_Store" />
+    <Content Include="paneldosya\images\dashboard\.DS_Store" />
+    <Content Include="paneldosya\images\faces\.DS_Store" />
+    <Content Include="paneldosya\js\.DS_Store" />
+    <Content Include="paneldosya\PSD\Purple_dashboard_free.psd" />
+    <Content Include="paneldosya\scss\.DS_Store" />
+    <Content Include="paneldosya\scss\components\.DS_Store" />
+    <Content Include="paneldosya\scss\components\_badges.scss" />
+    <Content Include="paneldosya\scss\components\_bootstrap-progress.scss" />
+    <Content Include="paneldosya\scss\components\_buttons.scss" />
+    <Content Include="paneldosya\scss\components\_cards.scss" />
+    <Content Include="paneldosya\scss\components\_checkbox-radio.scss" />
+    <Content Include="paneldosya\scss\components\_dropdown.scss" />
+    <Content Include="paneldosya\scss\components\_forms.scss" />
+    <Content Include="paneldosya\scss\components\_icons.scss" />
+    <Content Include="paneldosya\scss\components\_lists.scss" />
+    <Content Include="paneldosya\scss\components\_preview.scss" />
+    <Content Include="paneldosya\scss\components\_tables.scss" />
+    <Content Include="paneldosya\scss\landing-screens\_auth.scss" />
+    <Content Include="paneldosya\scss\mixins\.DS_Store" />
+    <Content Include="paneldosya\scss\mixins\_animation.scss" />
+    <Content Include="paneldosya\scss\mixins\_background.scss" />
+    <Content Include="paneldosya\scss\mixins\_badges.scss" />
+    <Content Include="paneldosya\scss\mixins\_blockqoute.scss" />
+    <Content Include="paneldosya\scss\mixins\_buttons.scss" />
+    <Content Include="paneldosya\scss\mixins\_cards.scss" />
+    <Content Include="paneldosya\scss\mixins\_misc.scss" />
+    <Content Include="paneldosya\scss\style.scss" />
+    <Content Include="paneldosya\scss\_background.scss" />
+    <Content Include="paneldosya\scss\_demo.scss" />
+    <Content Include="paneldosya\scss\_fonts.scss" />
+    <Content Include="paneldosya\scss\_footer.scss" />
+    <Content Include="paneldosya\scss\_functions.scss" />
+    <Content Include="paneldosya\scss\_misc.scss" />
+    <Content Include="paneldosya\scss\_navbar.scss" />
+    <Content Include="paneldosya\scss\_reset.scss" />
+    <Content Include="paneldosya\scss\_sidebar.scss" />
+    <Content Include="paneldosya\scss\_typography.scss" />
+    <Content Include="paneldosya\scss\_utilities.scss" />
+    <Content Include="paneldosya\scss\_variables.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\bower.json" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\css\materialdesignicons.css.map" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\css\materialdesignicons.min.css.map" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\license.md" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\package.json" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\README.md" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\materialdesignicons.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\_animated.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\_core.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\_extras.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\_functions.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\_icons.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\_path.scss" />
+    <Content Include="paneldosya\vendors\iconfonts\mdi\scss\_variables.scss" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57677</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44359/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

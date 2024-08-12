@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="form.master.cs" Inherits="kisiselwebprojev2.form" %>
+
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>HİF Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="paneldosya/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="paneldosya/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="paneldosya/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="paneldosya/images/favicon.png" />
+</head>
+
+<body>
+    <form runat="server">
+
+        <div class="container-scroller">
+            <!-- partial:../../partials/_navbar.html -->
+            <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="paneldosya/index.html">
+                        <img src="paneldosya/images/logo.svg" alt="logo" /></a>
+                    <a class="navbar-brand brand-logo-mini" href="paneldosya/index.html">
+                        <img src="paneldosya/images/logo-mini.svg" alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                    <div class="search-field d-none d-md-block">
+                        <form class="d-flex align-items-center h-100" action="#">
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-transparent">
+                                    <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                                </div>
+                                <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-right">
+                        <li class="nav-item nav-profile dropdown">
+                            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                                <div class="nav-profile-img">
+                                    <img src="paneldosya/images/faces/face31.jpg" alt="image">
+                                    <span class="availability-status online"></span>
+                                </div>
+                                <div class="nav-profile-text">
+                                    <p class="mb-1 text-black">Halil İbrahim Fırat</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="anasayfa.aspx">
+                                    <i class="mdi mdi-logout mr-2 text-primary"></i>
+                                    Signout
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-logout d-none d-lg-block">
+                            <a class="nav-link" href="anasayfa.aspx">
+                                <i class="mdi mdi-power"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:../../partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item nav-profile">
+                            <a href="#" class="nav-link">
+                                <div class="nav-profile-image">
+                                    <img src="paneldosya/images/faces/face31.jpg" alt="profile">
+                                    <span class="login-status online"></span>
+                                    <!--change to offline or busy as needed-->
+                                </div>
+                                <div class="nav-profile-text d-flex flex-column">
+                                    <span class="font-weight-bold mb-2">Halil İbrahim F.</span>
+                                    <span class="text-secondary text-small">Project Manager</span>
+                                </div>
+                                <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">
+                                <span class="menu-title">Ana Sayfa</span>
+                                <i class="mdi mdi-home menu-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- partial -->
+                <div class="main-panel">
+                    <div class="content-wrapper">
+                        <div>
+                            <div class="page-header">
+                                <h3 class="page-title">Düzenleme Sayfası</h3>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Basic elements</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="col-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Temel Form Elemanları</h4>
+                                        <p class="card-description">
+                                            Hakkımda Kısmı Güncelleme
+                                        </p>
+                                        <asp:Panel runat="server" ID="panelForm" CssClass="forms-sample">
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="txtAd">BAŞLIK İÇİN AD (BEN,[AD])</asp:Label>
+                                                <asp:TextBox runat="server" ID="txtAd" CssClass="form-control" placeholder="AD"></asp:TextBox>
+                                            </div>
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="txtAdSoyad">AD-SOYAD</asp:Label>
+                                                <asp:TextBox runat="server" ID="txtAdSoyad" CssClass="form-control" placeholder="AD-SOYAD"></asp:TextBox>
+                                            </div>
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="txtEmail">E-MAİL</asp:Label>
+                                                <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" placeholder="Email"></asp:TextBox>
+                                            </div>
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="txtDogumGunu">DOĞUM GÜNÜ</asp:Label>
+                                                <asp:TextBox runat="server" ID="txtDogumGunu" CssClass="form-control" placeholder="DOĞUM GÜNÜ"></asp:TextBox>
+                                            </div>
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="txtYasadigiSehir">YAŞADIĞI ŞEHİR</asp:Label>
+                                                <asp:TextBox runat="server" ID="txtYasadigiSehir" CssClass="form-control" placeholder="ŞEHİR"></asp:TextBox>
+                                            </div>
+                                            <div class="form-group">
+                                                <asp:Label runat="server" AssociatedControlID="txtHakkimda">HAKKIMDA</asp:Label>
+                                                <asp:TextBox runat="server" ID="txtHakkimda" TextMode="MultiLine" CssClass="form-control" Rows="4"></asp:TextBox>
+                                            </div>
+                                            <asp:Button runat="server" ID="btnGuncelle" CssClass="btn btn-gradient-primary mr-2" Text="Güncelle" OnClick="btnGuncelle_Click" />
+                                        </asp:Panel>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Şifre Güncelle</h4>
+
+                                        <div class="form-group">
+                                            <asp:Label runat="server" AssociatedControlID="txtKullaniciAdi">Kullanıcı Adı</asp:Label>
+                                            <asp:TextBox runat="server" ID="txtKullaniciAdi" CssClass="form-control" placeholder="Kullanıcı Adı"></asp:TextBox>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <asp:Label runat="server" AssociatedControlID="txtOldPassword">Eski Şifre:</asp:Label>
+                                            <asp:TextBox runat="server" ID="txtOldPassword" CssClass="form-control" placeholder="Eski Şifre" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                        <div class="form-group">
+                                            <asp:Label runat="server" AssociatedControlID="txtNewPassword">Yeni Şifre:</asp:Label>
+                                            <asp:TextBox runat="server" ID="txtNewPassword" CssClass="form-control" placeholder="Yeni Şifre" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                        <div class="form-group">
+                                            <asp:Label runat="server" AssociatedControlID="txtConfirmPassword">Yeni Şifre:</asp:Label>
+                                            <asp:TextBox runat="server" ID="txtConfirmPassword" CssClass="form-control" placeholder="Yeni Şifre" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                        <asp:Label ID="lblUpdateStatus" runat="server" Text="" ForeColor="Red"></asp:Label>
+                                        <asp:Button runat="server" ID="btnSifreGüncelle" CssClass="btn btn-gradient-primary mr-2" Text="Güncelle" OnClick="btnSifreGüncelle_Click" />
+
+
+                                        <h4 class="card-title">Yeni Kayıt Oluştur</h4>
+                                        <div class="form-group">
+                                            <asp:Label runat="server" AssociatedControlID="txtYeniKullanici">Kullanıcı Adı</asp:Label>
+                                            <asp:TextBox runat="server" ID="txtYeniKullanici" CssClass="form-control" placeholder="Kullanıcı Adı"></asp:TextBox>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <asp:Label runat="server" AssociatedControlID="txtYeniKullaniciSifre">Şifre:</asp:Label>
+                                            <asp:TextBox runat="server" ID="txtYeniKullaniciSifre" CssClass="form-control" placeholder="Şifre" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                        <asp:Button runat="server" ID="btnYeniKayit" CssClass="btn btn-gradient-primary mr-2" Text="Yeni Kayıt Oluştur" OnClick="btnYeniKayit_Click" />
+                                        <asp:Label ID="lblStatus" runat="server" Text="" ForeColor="Red"></asp:Label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Gelen Mesajlar</h4>
+            <!-- Listeleme alanları buraya eklenebilir -->
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                          OnRowCommand="GridView1_RowCommand" CssClass="table-responsive" 
+                          Width="100%">
+                <Columns>
+                    <asp:BoundField DataField="MesajID" HeaderText="Mesaj ID" SortExpression="MesajID" />
+                    <asp:BoundField DataField="AdSoyad" HeaderText="Ad-Soyad" SortExpression="AdSoyad" />
+                    <asp:BoundField DataField="Email" HeaderText="E-Mail" SortExpression="Email" />
+                    <asp:BoundField DataField="Mesaj" HeaderText="Mesaj" SortExpression="Mesaj" />
+                    <asp:BoundField DataField="Tarih" HeaderText="Tarih" SortExpression="Tarih" />
+                    <asp:TemplateField HeaderText="Sil">
+                        <ItemTemplate>
+                            <asp:Button runat="server" Text="sil" CssClass="btn btn-gradient-primary mr-2" 
+                                        CommandName="DeleteRow" CommandArgument='<%# Container.DataItemIndex %>' />
+                            <asp:Label ID="lblStatus" runat="server" Text="" ForeColor="Red"></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+        </div>
+    </div>
+</div>
+
+                            <div class="col-md-6 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Kayıtlı Kullanıcılar</h4>
+                                        <!-- Listeleme alanları buraya eklenebilir -->
+                                        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView2_RowCommand">
+                                            <Columns>
+                                                <asp:BoundField DataField="Username" HeaderText="Kullanıcı Adı" SortExpression="Username" />
+                                                <asp:BoundField DataField="Password" HeaderText="Şifre" SortExpression="Password" />
+                                                <asp:TemplateField HeaderText="Sil">
+                                                    <ItemTemplate>
+                                                        <asp:Button runat="server" Text="Sil" CssClass="btn btn-gradient-primary mr-2" CommandName="DeleteRow" CommandArgument='<%# Container.DataItemIndex %>' />
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                            </Columns>
+                                        </asp:GridView>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="card-title">Sosyal Medya Link Güncelleme</h4>
+
+                        <div class="form-group d-flex flex-column-reverse">
+                            <asp:TextBox ID="txtTwitterLink" runat="server" CssClass="form-control" placeholder="Twitter Bağlantısı Giriniz..."></asp:TextBox>
+                            <label for="txtTwitterLink" class="webform-label">Twitter Bağlantısı</label>
+                        </div>
+
+                        <div class="form-group d-flex flex-column-reverse">
+                            <asp:TextBox ID="txtInstagramLink" runat="server" CssClass="form-control" placeholder="Instagram Bağlantısı Giriniz..."></asp:TextBox>
+                            <label for="txtInstagramLink" class="webform-label">Instagram Bağlantısı</label>
+                        </div>
+
+                        <div class="form-group d-flex flex-column-reverse">
+                            <asp:TextBox ID="txtLinkedInLink" runat="server" CssClass="form-control" placeholder="LinkedIn Bağlantısı Giriniz..."></asp:TextBox>
+                            <label for="txtLinkedInLink" class="webform-label">LinkedIn Bağlantısı</label>
+                        </div>
+                        <asp:Button runat="server" ID="Button1" CssClass="btn btn-gradient-primary mr-2" Text="Güncelle" OnClick="medyaGuncelle_Click" />
+
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+
+        <!-- container-scroller -->
+        <!-- plugins:js -->
+        <script src="paneldosya/vendors/js/vendor.bundle.base.js"></script>
+        <script src="paneldosya/vendors/js/vendor.bundle.addons.js"></script>
+        <!-- endinject -->
+        <!-- inject:js -->
+        <script src="paneldosya/js/off-canvas.js"></script>
+        <script src="paneldosya/js/misc.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page-->
+        <script src="paneldosya/js/file-upload.js"></script>
+        <!-- End custom js for this page-->
+    </form>
+
+</body>
+
+</html>
+
+

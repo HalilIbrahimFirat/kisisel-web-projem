@@ -1,0 +1,308 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="anasayfa.master.cs" Inherits="kisiselwebprojev2.anasayfa" %>
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Halil İbrahim FIRAT</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bar.css">
+     <link rel="stylesheet" href="css/firat.css">
+
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
+    <!--
+Tooplate 2120 Ben Resume
+https://www.tooplate.com/view/2120-ben-resume
+-->
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+    <form runat="server">
+        <!-- MENU BAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">HALİL İBRAHİM FIRAT
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <asp:Button ID="Button2" runat="server" Text="Button" CssClass="d-none" />
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="#intro" class="nav-link smoothScroll">Giriş</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link smoothScroll">Hakkımda</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#sss" class="nav-link smoothScroll">Sıkça Sorulan Sorular</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link smoothScroll">İletişim</a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
+<a href="Users/halil/Downloads/HIF_cv.pdf" class="custom-btn btn" download="HIF_cv.pdf">CV İndir</a>
+                    </div>
+                    <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="custom-btn btn" NavigateUrl="login.aspx" Text="Giriş Yap"></asp:HyperLink>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto col-lg-5 col-md-5 col-10">
+                        <img src="images/firat.jpeg" class="firat" alt="Ben Resume HTML Template" />
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
+                        <div class="hero-text">
+                            <h1 class="hero-title">👋 MERHABA!</h1>
+                            <a href="mailto:halilibrahimfiratt2@gmail.com" class="email-link">halilibrahimfiratt2@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h3 class="mb-4">Ben,
+                            <asp:Label runat="server" ID="LblAdSoyadBaslik" Text="Halil İbrahim" /></h3>
+
+
+                        <asp:Label ID="lblHakkimda" runat="server" Text="Merhaba ben Halil İbrahim Fırat. Okulumu Gaziantep İslam Bilim ve Teknoloji Üniversitesi'nde Bilgisayar Mühendisliği 3. sınıfta okumaktayım. Şuan 20 yaşında olup Gaziantep bölgesinde ikamet etmekteyim."></asp:Label>
+
+                        <br />
+                        <br />
+                        <br />
+
+                        <ul class="list-unstyled">
+                            <li><strong>AD SOYAD:</strong>
+                                <asp:Label runat="server" ID="lblAdSoyad" Text="Halil İbrahim Fırat" /></li>
+                            <li><strong>YAŞADIĞI ŞEHİR :</strong>
+                                <asp:Label runat="server" ID="lblSehir" Text="Gaziantep" /></li>
+                            <li><strong>DOĞUM GÜNÜ:</strong>
+                                <asp:Label runat="server" ID="lblDogumTarihi" Text="18 AĞUSTOS 2003" /></li>
+                            <li><strong>E-MAİL :</strong>
+                                <asp:Label runat="server" ID="lblEmail" Text="halilibrahimfiratt2@gmail.com" /></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-5 mx-auto col-md-6 col-12">
+                        <asp:Image ID="imgAbout" runat="server" CssClass="about-image img-fluid" AlternateText="Ben's Resume HTML Template" ImageUrl="images/true-agency.jpg" />
+                    </div>
+
+                </div>
+                <br />
+                <br />
+                <p>C#</p>
+                <div class="container">
+                    <div class="skills csharp">65%</div>
+                </div>
+                
+
+                <p>CSS,HTML</p>
+                <div class="container">
+                    <div class="skills ch">55%</div>
+                </div>
+
+                <p>C</p>
+                <div class="container">
+                    <div class="skills c">60%</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq section-padding" id="sss">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <h3 class="mb-5">Sıkça Sorulan Sorular</h3>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Hangi üniversiteden mezunsun veya olacaksın?                                  
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>GAZİANTEP İSLAM BİLİM ve TEKNOLOJİ ÜNİVERSİTESİ</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Bu zamana kadar yaptığınız çalışmalar nelerdir?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>Derste verilen projelere ek olarak yaptığım projelere sayfanın en altındaki gitHub iconuna tıklayarak gidebilirsiniz.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Yabancı dil seviyenizi nerede görüyorsunuz?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>A2-B1 Seviye aralığında</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Mezun olurkenki genel not ortalamanız kaçtı?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>-,--</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Güçlü bulduğunuz yönleriniz nelerdir?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>Öğrenmeye açık, iletişim seviyesi yüksek, grup çalışmasına uygun bir insanım.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="faq-info-text"><strong>Daha fazlası için iletişim kısmından bana ulaşabilir veya cv'mi inceleyebilirsiniz.</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- col -->
+            </div>
+            <!-- row -->
+        </section>
+
+
+        <section class="contact section-padding pt-0" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-group d-flex flex-column-reverse">
+                            <asp:TextBox ID="cfName" runat="server" CssClass="form-control" placeholder="Ad-Soyad giriniz..."></asp:TextBox>
+                            <label for="cf-name" class="webform-label">Ad-Soyad</label>
+                        </div>
+
+                        <div class="form-group d-flex flex-column-reverse">
+                            <asp:TextBox ID="cfEmail" runat="server" CssClass="form-control" placeholder="E-mail giriniz..."></asp:TextBox>
+                            <label for="cf-email" class="webform-label">E-Mail</label>
+                        </div>
+
+                        <div class="form-group d-flex flex-column-reverse">
+                            <asp:TextBox ID="cfMessage" runat="server" TextMode="MultiLine" Rows="5" CssClass="form-control" placeholder="Mesaj yazınız..."></asp:TextBox>
+                            <label for="cf-message" class="webform-label">Mesaj</label>
+                        </div>
+
+                        <asp:Button ID="submitButton" runat="server" Text="Gönder" CssClass="form-control" OnClick="SubmitButton_Click" />
+                    </div>
+
+                    <div class="mx-auto col-lg-4 col-md-6 col-12">
+                        <p>
+                            <a href="mailto:halilibrahimfiratt2@gmail.com">halilibrahimfiratt2@gmail.com
+                            <i class="fas fa-arrow-right custom-icon"></i>
+                            </a>
+                        </p>
+
+                        <ul class="social-links mt-2">
+
+                            <li runat="server" id="liTwitterLink">
+                                <a href="https://twitter.com/HalilbrahimFra2" rel="noopener" class="fab fa-twitter"></a>
+                            </li>
+
+                            <li runat="server" id="liInstagramLink">
+                                <a href="https://www.instagram.com/halil_ibrahimfiratt2/" rel="noopener" class="fab fa-instagram"></a>
+                            </li>
+
+                            <li runat="server" id="liLinkedInLink">
+                                <a href="https://www.linkedin.com/in/halil-ibrahim-fırat-a0a59425a/" rel="noopener" class="fab fa-linkedin"></a>
+                            </li>
+
+
+                        </ul>
+
+                        <p class="copyright-text mt-5 pt-3">Copyright &copy; 2023 HİF</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+    </form>
+</body>
+
+</html>
+

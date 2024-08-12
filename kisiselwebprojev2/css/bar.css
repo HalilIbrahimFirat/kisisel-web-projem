@@ -1,0 +1,39 @@
+﻿/* Make sure that padding behaves as expected */
+* {
+ 
+    box-sizing: border-box
+}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+}
+
+
+
+.csharp {
+    width: 80%;
+    background-color:burlywood
+}
+/* Blue */
+.ch {
+    width: 55%;
+    background-color: #f44336;
+}
+/* Red */
+.c {
+    width: 60%;
+    background-color: #808080;
+}
+
+
+
+/* Dark Grey */
